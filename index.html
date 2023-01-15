@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanushree</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0dfccae3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Dhanushree</span><br></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me0.1.jpeg">
+                </div> <!--images-->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>loream ipsum</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>JavaScript, Python</li>
+                            <li><span>Web</span><br>HTML, CSS</li>
+                            <li><span>Frameworks</span><br>Flask</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>current</span><br>STEM Ambassador @COMSC cardiff university</li>
+                            <li><span>May 2022-Aug 2022</span><br>Alternative text writer @Straive</li>
+                            <li><span>Nov '21-Feb '21</span><br>Punlic Relations Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>current</span><br>MSc Computing @Cardiff University</li>
+                            <li><span>2018-2021</span><br>BSc Psychology @Bangalore University(Jyoti Nivas College)</li>
+                        </ul>
+                    </div>
+
+
+                </div> <!--text-->
+
+            </div>
+        </div>
+    </div>
+ <!-- -----------------------Blog/services----------    -->
+ <div id="blog">
+    <div class="container">
+        <h1 class="sub-title">Blog</h1>
+        <div class="blog-list">
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Computational thinking</h2>
+                <p>Loreum ipsum</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Example of computational thinking</h2>
+                <p>Loreum ipsum</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-star"></i>
+                <h2>Famous Computer scientist</h2>
+                <p>Loreum ipsum</p>
+                <a href="#">Learn more</a>
+            </div>
+
+
+        </div>
+ 
+    </div>
+ </div>
+
+ <!-- ---------------portfolio---------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+
+    </div>
+ </div>
+ 
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>   
+</body>
+</html>
