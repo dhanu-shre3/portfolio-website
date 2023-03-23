@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #050505;
+    background: #080808;
     color: #fff;
 }
 
@@ -32,9 +32,9 @@ nav{
     flex-wrap: wrap;
 }
 
-.logo{
+/* .logo{
     width: 140px;
-}
+} */
 
 nav ul li{
     display: inline-block;
@@ -55,7 +55,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #E31C79;
+    background: #F43C83;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -77,15 +77,14 @@ nav ul li a:hover::after{
 
 }
 .header-text h1 span{
-    color: #E31C79;
+    color: #F43C83;
 
 }
 
 /* ----------about----------- */
 #about{
     padding: 80px 0;
-    color: #808080;
-    background: #FEEEEC;
+    color: #ababab;
 }
 .row{
     display: flex;
@@ -93,22 +92,24 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
-/* .about-col-1{
+.about-col-1{
     flex-basis: 35%;
     /* that means the width of the coloum will be 35% */
-/* }
-*/
+}
 
-/* .about-col-1 img{
+
+.about-col-1 img{
+    padding-top: 50px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 100px;
     /* conner will be round */
-/* } */
-/*
+ } 
+
 .about-col-2{
     flex-basis: 60%;
     /* 5%space between both column */
-/* }  */
+} 
+
 
 .sub-title{
     font-size: 60px;
@@ -130,7 +131,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #E31C79;
+    background: #F43C83;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -147,7 +148,7 @@ nav ul li a:hover::after{
 
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #da6c8f;
     font-size: 14px;
 
 }
@@ -248,6 +249,7 @@ nav ul li a:hover::after{
     background: #E31C79;
 }
 
+
 /* ----------------blog------------------ */
 
 #blog{
@@ -292,10 +294,15 @@ nav ul li a:hover::after{
 }
 
 /* ---------------contact-------------- */
-#contact{
-    background: #FEEEEC;
+/* #contact{
+    background: #050505;
     padding-top: 15px;
-    color: #050505;
+    color: #fff;
+} */
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contact-left{
     flex-basis: 35%;
@@ -368,6 +375,7 @@ form btn2{
 }
 
 
+
 /* -------------small screens------- */
 
 @media only screen and (max-width: 600px){
@@ -379,7 +387,7 @@ form btn2{
 
 /* ----------- blog post-------- */
 
-.blog-content{
+/* .blog-content{
     padding: 50px;
     border: #262626;
     border-radius: 10px;
@@ -392,4 +400,4 @@ form btn2{
     line-height: 1.7rem;
     margin: 1rem 0;
     text-align: justify;
-}
+} */
