@@ -14,11 +14,11 @@
             <nav>
                 <img src="" class="logo" alt="">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -31,12 +31,12 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <!-- <div class="about-col-1">
                     <img src="images/me0.1.jpeg">
-                </div> <!--images-->
+                </div> images -->
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>loream ipsum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, nunc ut sollicitudin ultricies, odio leo tempus libero, et elementum quam urna a ex. Sed et orci eget ligula eleifend imperdiet. Nam non tristique ipsum. Mauris magna libero, elementum quis tristique eget, congue in risus. Sed lectus arcu, commodo vel nisl ac, tristique ultricies nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam mollis risus magna, ac elementum libero venenatis et. Suspendisse sollicitudin consequat nibh pellentesque mollis. Sed et tortor ante. Suspendisse efficitur ut metus vel blandit. Duis ornare </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -55,7 +55,7 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>current</span><br>STEM Ambassador @COMSC cardiff university</li>
-                            <li><span>May 2022-Aug 2022</span><br>Alternative text writer @Straive</li>
+                            <li><span>May 2022-Aug 2022</span><br>Alt text writer @Straive</li>
                             <li><span>Nov '21-Feb '21</span><br>Punlic Relations Intern</li>
                         </ul>
                     </div>
@@ -72,6 +72,46 @@
             </div>
         </div>
     </div>
+ <!-- ---------------portfolio---------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+            <div class="work">
+                <img src="images/town.jpeg" alt="">
+                <div class="layer">
+                    <h3>Static Website</h3>
+                    <p>Loream ipsum</p>
+                    <a href="https://dhanu-shre3.github.io/AssessmentCMT119-StaticWebsite/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/town.jpeg" alt="">
+                <div class="layer">
+                    <h3>Rock Paper Scissor Game</h3>
+                    <p>Loream ipsum</p>
+                    <a href="https://dhanu-shre3.github.io/rock-paper-scissor/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+
+            </div>
+
+            <!-- <div class="work">
+                <img src="images/town.jpeg" alt="">
+                <div class="layer">
+                    <h3>Rock Per Sissor Game</h3>
+                    <p>Loream ipsum</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+
+            </div> -->
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+
+    </div>
+ </div>
+
  <!-- -----------------------Blog/services----------    -->
  <div id="blog">
     <div class="container">
@@ -81,7 +121,7 @@
                 <i class="fa-solid fa-brain"></i>
                 <h2>Computational thinking</h2>
                 <p>Loreum ipsum</p>
-                <a href="#">Learn more</a>
+                <a href="comp.html">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-code"></i>
@@ -102,11 +142,35 @@
     </div>
  </div>
 
- <!-- ---------------portfolio---------------- -->
- <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Portfolio</h1>
 
+ <!-- ------------------contact--------------- -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>dhanushree0424@gmail.com</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Dhanushree-SomaiahCV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <3 by Dhanushree</p>
     </div>
  </div>
  
