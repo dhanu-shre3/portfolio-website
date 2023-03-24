@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                                 <div class="about-col-1">
-                        <img src="static/images/me7.png">
+                        <img src="images/me7.png">
                     </div> 
     
                 <div class="about-col-2">
@@ -45,9 +45,9 @@
                     </p>
     
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
     
     
                     </div>
@@ -85,7 +85,7 @@
     
             <div class="work-list">
                 <div class="work">
-                    <img src="static/images/StaticWebsite.png" alt="">
+                    <img src="images/StaticWebsite.png" alt="">
                     <div class="layer">
                         <h3>Static Website</h3>
                         <p>Cmt119 assessment</p>
@@ -94,7 +94,7 @@
                 </div>
     
                 <div class="work">
-                    <img src="static/images/RPS.png" alt="">
+                    <img src="images/RPS.png" alt="">
                     <div class="layer">
                         <h3>Rock Paper Scissor Game</h3>
                         <p>Personal project</p>
@@ -161,21 +161,25 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>dhanushree0424@gmail.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:email@example.com">dhanushree0424@gmail.com</a></p>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dhanushreemsomaiah/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="https://github.com/dhanu-shre3"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="images/Dhanushree-SomaiahCV.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/Dhanushree-Somaiah-Resume.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <p>Want to get in touch? Fill out the form below and I will get back to you as soon as possible.</p>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name"  required data-validation-required-message="Please enter your name.">
+                    
+                    <input type="email" name="email" placeholder="Your email"  required data-validation-required-message="Please enter your email address.">
+                    
+                    <textarea type="text" name="message" rows="6" placeholder="Your Message"  required data-validation-required-message="Please enter your message."></textarea>
+                    
+                    <button type="submit"  class="btn btn2">Submit</button>
                 </form>
-            </div>
 
             
         </div>
@@ -198,6 +202,17 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
- </script>   
+ </script> 
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwFpQ7yX4kluKvsSbXLzovz7i_bg0Rz2afNAujeRk_Fw-su79Q_k9kzYE6gIhIAqwNAjQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>  
 </body>
 </html>
